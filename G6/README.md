@@ -30,8 +30,8 @@ Welcome to the JavaScript Basic subject. Throughout this subject, we will learn 
 
 ## Contact 📡
 
-Tanja Stojanovska
+Tanja Stojanovska  
 stojanovskatanja@hotmail.com
 
-Jana Simjanovska
+Jana Simjanovska  
 simjanovska.jana@gmail.com
