@@ -30,6 +30,6 @@ Welcome to the JavaScript Basic subject. Throughout this subject, we will learn 
 
 ## Contact 📡
 
-trainer mail
+Trainer: Borisovski Borche - borisovski.borce@gmail.com
 
-assistant mail
+Assistant: Danilo Borozan - daniloborozan07@gmail.com
