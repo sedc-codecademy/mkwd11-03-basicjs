@@ -1,6 +1,0 @@
-ECMA HISTORY
-
-The first edition of ECMA-262 was adopted by the Ecma General Assembly in June 1997. Several editions of the language standard have been published since then.
-ECMAScript 2022, the 13th and current version, was released in June 2022.
-
-AJAX  Asynchronous JavaScript And XML.
