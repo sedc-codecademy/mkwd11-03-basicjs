@@ -1,5 +1,6 @@
 // alert("Hello from Visual Studio Code");
 console.log("Hello from Javascript");
+console.log("Hello from Github!");
 
 // This is undefined
 var firstName;
