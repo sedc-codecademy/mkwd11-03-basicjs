@@ -6,5 +6,5 @@ let userInput = prompt("Enter length in feet:");
 // let convertedUserInput = parseInt(userInput);
 let convertedUserInput = parseFloat(userInput);
 
-let result = conversionRateFromFeetToMeters * userInput;
+let result = conversionRateFromFeetToMeters * convertedUserInput;
 console.log("The result in meters is ", result);
