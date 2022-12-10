@@ -22,7 +22,7 @@ After this, you can make all sorts of changes to the local repo (for example add
 
 ### Stage or add your files
 
-**git add .** (this stages all of the changes you have made, so if you only want to add a specific file, and not everything, use the name of the file in place of the ., like so **git add name-of-file.extension**).
+**git add .** (this stages all of the changes you have made, so if you only want to add a specific file, and not everything, use the name of the file in place of the . (the full stop), like so: **git add name-of-file.extension**).
 
 ### Commit your changes
 
@@ -32,9 +32,11 @@ After this, you can make all sorts of changes to the local repo (for example add
 
 **git push**
 
-And voila! Your local and remote repos are now synchronized 🎈
+And voila! Your local repo is now in sync with the remote one 🎈
 
 If there are some changes on your remote repo, that you don't have locally, use the following command to pull them into your local repo (while you are still navigated inside it)
 
 **git pull**
+
+There are many more commands and functionalities that Git and GitHub provide, but these are the most basic ones that should get you started, as well as some of the most used ones.
 
