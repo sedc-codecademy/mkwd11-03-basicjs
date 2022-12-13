@@ -4,6 +4,9 @@
 // DO NOT MIX TYPES
 const primes = [2, 3, 5, 7, 11, 13];
 
+// You can mix types in the array. But generally don't
+const mixedArray = [2, 3, "Hello", true];
+
 // You can create an empty array as well
 let studentGrades = [];
 
@@ -37,7 +40,16 @@ console.log(`Before changing student[4]: ${students[4]}`);
 students[4] = "Alexandra";
 console.log(`After changing student[4]: ${students[4]}`);
 
+// Array is const. This is not possible.
+// students = [];
+
+// let studenArr = ["Ivan", "Bojan"];
+// studenArr = ["Dani", "Antonio"];
+
 // THE LENGTH OF THE ARRAY CAN ALSO BE ACCESSED AND UTILIZED
+// Use array.length to access the length of the array
+// Same as:
+// birthdays[2] = "1891-07-28";
 const birthdays = ["1992-10-10", "1956-04-12", "1881-07-28"];
 console.log(`Birthday before change: ${birthdays[birthdays.length - 1]}`);
 birthdays[birthdays.length - 1] = "1891-07-28"; // This is the last item in the array
@@ -68,9 +80,16 @@ console.log("after shift: ", colors);
 // Pop removes the last element
 colors.pop();
 console.log("after pop: ", colors);
+// Useful to know. array.pop() and array.shift() return the removed element.
 
 // LOOPS (ITERATIONS)
 // MASSIVELY IMPORTANT
+
+// IF EQUIVALENT OF WHILE
+// const studentGrade = 8;
+// if (studentGrade >= 6) {
+//   console.log("student has passed");
+// }
 
 // WHILE LOOP (Rarely used in practice)
 // The while loop will repeat the code within it's block as long as a condition is true
@@ -84,23 +103,24 @@ console.log("after pop: ", colors);
 
 // Another while example
 const numberArray = [2, 4, 1, 5, 2, 10, 7, 9];
-function largestOfTen(arrayToCheck) {
-  let largest = arrayToCheck[0];
-  let counter = 0;
 
+function largestOfTen(arrayToCheck) {
+  let counter = 0;
+  let largest = 0;
   while (counter < arrayToCheck.length) {
+    // console.log(arrayToCheck[counter]);
     if (arrayToCheck[counter] > largest) {
       largest = arrayToCheck[counter];
     }
     counter++;
   }
-  console.log("The largest number in the array is: ", largest);
+  return largest;
 }
 
-largestOfTen(numberArray);
+const largestNumber = largestOfTen(numberArray);
+console.log("largestNumber", largestNumber);
 
-// Exercise
-
+// Exercise (Another example)
 function sumOfSquares(startingNumber, endingNumber) {
   let sum = 0;
   let counter = startingNumber;
@@ -126,11 +146,13 @@ do {
 console.log(iResult);
 
 // FOR LOOPS (IMPORTANT)
+for (let index = 0; index < numberArray.length; index++) {
+  console.log(numberArray[index]);
+}
 
 const listItems = [];
-
 for (let index = 0; index < 5; index++) {
-  listItems.push(`<li>List Item ${index}</li>`);
+  listItems.push(`List Item ${index}`);
 }
 console.log(listItems);
 
@@ -163,53 +185,3 @@ function multiplyByTen(arrayToMultiply) {
 
 const multiplied = multiplyByTen([1, 2, 3, 4]);
 console.log(multiplied);
-
-// FOR OF (IMPORTANT, GET USED TO THIS KIND OF LOOPING)
-
-function remainderCalculator(remainderArray) {
-  let resultArray = [];
-  for (const number of remainderArray) {
-    resultArray.push(number % 2);
-  }
-  return resultArray;
-}
-
-const remainders = remainderCalculator([12, 13, 14, 15, 17, 19, 21, 22]);
-console.log(remainders);
-
-// BREAK AND CONTINUE
-// BREAK exits the loop
-// CONTINUE exits the current iteration
-
-// Using Break
-function favoriteAuthor(authorArray) {
-  const favoriteIndex = Math.floor(Math.random() * authorArray.length);
-  let author = "";
-  for (let index = 0; index < authorArray.length; index++) {
-    if (index === favoriteIndex) {
-      author = authorArray[index];
-      break;
-    }
-    console.log(index);
-  }
-  return author;
-}
-
-const favoriteWriter = favoriteAuthor(authors);
-console.log("favoriteWriter:", favoriteWriter);
-
-// Using continue
-function filterOutEvenNumbers(numbers) {
-  const resultArray = [];
-
-  for (const number of numbers) {
-    if (number % 2 === 0) {
-      continue;
-    }
-    resultArray.push(number);
-  }
-  return resultArray;
-}
-
-const onlyOddNumbers = filterOutEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-console.log(onlyOddNumbers);
