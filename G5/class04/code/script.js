@@ -63,6 +63,8 @@ console.log('-------- LOOPS ----------');
 
 // while
 
+// Add the square roots of all the numbers between 101 and 150;
+
 let whileCounter = 101;
 let sumOfSquares = 0;
 
@@ -81,6 +83,8 @@ while(whileCounter <= 150) {
 console.log(`Result is ${sumOfSquares}`);
 
 // do while
+
+// Ask the user to gues our secret number via promt. The user should be able to quess as many times untile he guesses our secret number!
 
 let secretNumber = 9;
 let userNumber = 0;
