@@ -32,19 +32,14 @@ function funcWithParam(name) {
     console.log(`Hello, I am ${name}.`);
 }
 
-btn.onclick = someFunc;
-// btn.onclick = someFunc(); // Wrong syntax
+btn.onclick = someFunc; // We assign just the function name, without the parentheses 
+// btn.onclick = someFunc(); // This is incorrect syntax
 
 // This will overwrite the previously created event handler, meaning that when we click the btn button, only
 // the code below will be triggered and executed
 // This is the main drawback of the DOM event handlers - for a given element, we can only bind one function to one event type 
 btn.onclick = function() {
-    // ... some code...
     funcWithParam("Jana");
-    // ... plus some more code...
-    // basically, the anonymous function makes it possible for us to trigger as much code as we want 
-    // when an event occurs with only one event listener if we need or want to
-    // Also, the anonymous function gives us the option to bind functions with parameters to the events
 }
 
 // ===== Event Listeners =====
@@ -58,7 +53,7 @@ function secondFunc() {
     console.log("I AM SECOND FUNC");
 }
 
-// With can create as many event listeners for one element and one event type as we want and need - this is the
+// We can create as many event listeners for one element and one event type as we want and need - this is the
 // advantage over the traditional DOM handlers
 pinkDiv.addEventListener("mouseover", firstFunc);
 pinkDiv.addEventListener("mouseover", secondFunc);
@@ -87,11 +82,16 @@ inputElem.addEventListener("blur", function(event) {
 
 // Some more examples
 function functionWithParam(name) {
+    // ... some code...
     if(name.length != 0) {
         console.log(`Hello, I am ${name}`);
     } else {
         console.log(`Please enter your name in the input field`);
     }
+    // ... plus some more code...
+    // basically, the anonymous function makes it possible for us to trigger as much code as we want 
+    // when an event occurs with only one event listener if we need or want to
+    // Also, the anonymous function gives us the option to bind functions with parameters to the events
 }
 
 let btn1 = document.getElementById("btn1");
