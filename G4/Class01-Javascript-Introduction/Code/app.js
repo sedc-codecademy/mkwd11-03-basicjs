@@ -99,7 +99,7 @@ let modOne = 18;
 let modTwo = 4;
 
 // Returns remainder of divison of first number with second number
-console.log(modOne % modTwo);
+console.log(18 % 4);
 
 // Increment
 // Adds one to number variable
