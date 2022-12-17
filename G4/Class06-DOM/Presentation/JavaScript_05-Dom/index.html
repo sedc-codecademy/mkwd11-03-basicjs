@@ -610,8 +610,8 @@ mainTitleEl.style.backgroundColor = "blue"; // Changes background color to blue
 const firstDivEl = document.querySelector("div");
 const allParagraphs = document.getElementsByTagName("p");
 const lastDivEl = document.getElementsByTagName("body")[0].lastElementChild;
-const lastDivH3El = lastDiv.getElementsByTagName("h3")[0];
-const lastDivH1El = header3last.previousElementSibling;
+const lastDivH3El = lastDivEl.getElementsByTagName("h3")[0];
+const lastDivH1El = lastDivH3El.previousElementSibling;
 const paragraphSecondText = document.getElementsByClassName("second")[0].innerText;
 console.log(paragraphSecondText)
 document.querySelector("text").innerText += "Updated Text Content";
