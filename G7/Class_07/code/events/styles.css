@@ -1,0 +1,14 @@
+#parentDiv {
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#childDiv{
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
