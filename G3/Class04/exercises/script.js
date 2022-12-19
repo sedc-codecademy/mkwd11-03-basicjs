@@ -50,15 +50,34 @@ function getBooleanInput() {
 
 
 
-let num1 = getNumberInput("Please enter a number");
-console.log("First input: ", num1);
+// let num1 = getNumberInput("Please enter a number");
+// console.log("First input: ", num1);
 
-let num2 = getNumberInput("Please enter your age");
-console.log("Second input: ", num2);
+// let num2 = getNumberInput("Please enter your age");
+// console.log("Second input: ", num2);
 
-let num3 = getNumberInput("Please enter your year of birth");
-console.log("Third input: ", num3);
+// let num3 = getNumberInput("Please enter your year of birth");
+// console.log("Third input: ", num3);
 
-let num4 = getNumberInput("Please enter value");
-console.log("Fourt input: ", num4);
+// let num4 = getNumberInput("Please enter value");
+// console.log("Fourt input: ", num4);
 
+
+
+
+
+let arr = [
+    "Trajan",
+    "Good",
+    "Teaching"
+]
+
+function tellStory(array) {
+    let result = `This is ${array[0]}. ${array[0]} is a nice person. Today they are ${array[1]}. They are ${array[2]} all day. The end.`;
+
+    return result;
+}
+
+
+let resultOfTellStory = tellStory(arr);
+console.log(resultOfTellStory);
