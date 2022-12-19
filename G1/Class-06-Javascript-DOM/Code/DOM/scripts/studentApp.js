@@ -15,10 +15,23 @@ function printGrades(subjects, grades, element) {
     list.innerHTML += `<li>${subjects[i]}: ${grades[i]}</li>`;
   }
 }
-
 printGrades(subjects, grades, contentDiv);
 
 function printStudents(students, element) {
-  element.innerHTML = "";
-  element.innerHTML = "";
+  const orderedList = document.createElement("ol");
+  orderedList.id = 'student-list';
+  // For EACH Student of Students
+  for (const student of students) {
+    orderedList.innerHTML += `<li>${student}</li>`;
+    console.log(orderedList.innerHTML);
+  }
+  element.appendChild(orderedList);
 }
+
+function academyPanel(personType, name) {}
+
+printStudents(students, contentDiv);
+
+const innerContent = document.querySelector("#innerContent");
+innerContent.innerText = `<h1>Hello from SEDC</h1>`;
+innerContent.innerHTML = `<h>Hello from SEDC</h`;
