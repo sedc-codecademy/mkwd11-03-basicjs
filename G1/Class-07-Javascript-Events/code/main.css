@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main-bg: #ffedcc;
+  --color-light-bg: #fefefe;
+  --color-primary: #a29bfe;
+  --color-accent: #55efc4;
+  --color-dark: #2d3436;
+  --main-border-radius: 1.6rem;
+  --font-family-main: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family-main);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+
+body {
+  background-color: var(--color-main-bg);
+  color: var(--color-dark);
+  padding: 1rem;
+}
+
+/*
+Article Styles
+*/
+
+article {
+  padding: 1rem;
+  background-color: var(--color-light-bg);
+  border-radius: var(--main-border-radius);
+}
+
+article > p {
+  font-size: 1.4rem;
+}
+
+img {
+  width: 100%;
+  border-radius: var(--main-border-radius);
+}
+
+/* Form Styles */
+
+form {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: var(--main-border-radius);
+  margin: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.form-group > input,
+.form-group > textarea {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: var(--main-border-radius);
+  color: var(--color-dark);
+  background-color: var(--color-light-bg);
+  font-family: var(--font-family-main);
+}
+
+.form-group > label {
+  font-family: var(--font-family-main);
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: var(--main-border-radius);
+  font-size: 1.6rem;
+  font-family: var(--font-family-main);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-accent {
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+}
+
+.btn-primary {
+  color: var(--color-dark);
+  background-color: var(--color-primary);
+}
+
+.comment-box {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border-radius: var(--main-border-radius);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Javascript Event Handling</h1>
+    <!-- Event Handlers -->
+    <article class="top-article">
+      <img
+        src="https://images.unsplash.com/photo-1670979313222-310eaa2d5601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        alt="traffic"
+      />
+      <h2>Article Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eligendi
+        excepturi? Cum iste facilis a delectus non atque, illum quis id.
+        Repellendus cumque distinctio, corrupti beatae ipsum laboriosam
+        aspernatur. Iure, totam? Quidem fugiat quae incidunt suscipit adipisci
+        ratione laboriosam consectetur beatae expedita, aperiam nisi? Illum
+        veniam, mollitia in inventore quam quibusdam tempora recusandae laborum
+        ullam minus doloribus ipsam hic fuga ut ratione laudantium sunt, facere
+        quia. Voluptatibus omnis fuga ratione! Magnam, facere amet. Suscipit
+        odit repellat iusto dolores exercitationem vitae iste aliquam assumenda
+        quaerat fugit quidem libero saepe blanditiis natus id aut cumque, iure
+        distinctio ex inventore fugiat illum optio!
+      </p>
+      <button id="article-btn" type="submit" class="btn btn-primary">
+        Read more
+      </button>
+    </article>
+
+    <form>
+      <h4>Comment Event Handler</h4>
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea
+          name="commentArea"
+          id="commentArea"
+          cols="30"
+          rows="3"
+        ></textarea>
+      </div>
+    </form>
+
+    <p class="comment-box"></p>
+
+    <!-- Event Listeners -->
+    <form id="register-form">
+      <h3>Register</h3>
+      <h4>Please enter your credentials</h4>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="off" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" id="register-btn" class="btn btn-accent">
+        Register
+      </button>
+      <button id="lockBtn" type="button" class="btn">Lock Form</button>
+    </form>
+    <article>
+      <h2>Article Two</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vel vitae
+        harum maxime aliquam dignissimos sapiente, esse praesentium. Veniam
+        rerum, id quam dolores commodi repellendus blanditiis sapiente dicta
+        quos autem eligendi facilis cum itaque sed eum. Cum ut beatae aperiam
+        eos, blanditiis sed incidunt modi laborum doloremque! Ipsum, neque
+        vitae.
+      </p>
+      <button id="details-btn" class="btn btn-primary">Read More</button>
+    </article>
+    <script src="app.js"></script>
+  </body>
+</html>
