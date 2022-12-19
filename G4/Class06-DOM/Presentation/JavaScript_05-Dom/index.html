@@ -493,11 +493,11 @@ const grades = ["A", "B", "A", "C"];
 function printGrades(subjects, grades, element){
     console.log(element);
     element.innerHTML = ""; // clearing element
-    element.innerHTML += "<ul>";
+	let gradesHtml = ""
     for(let i=0; i < subjects.length; i++){
-        element.innerHTML += `<li>${subjects[i]}: ${grades[i]}</li>`;
+        gradesHtml += `<li>${subjects[i]}: ${grades[i]}</li>`;
     }
-    element.innerHTML += "</ul>"
+    element.innerHTML = `<ul>${gradesHtml}</ul>`
 }
 					</code></pre></p>
 				</section>
@@ -506,11 +506,11 @@ function printGrades(subjects, grades, element){
 					<p><pre><code class="hljs" data-trim contenteditable>
 function printStudents(students, element){
     element.innerHTML = ""; // clearing element
-    element.innerHTML += "<ol>";
+		let studentsHtml = ""
     for(let student of students){
-        element.innerHTML += `<li>${student}</li>`;
+        studentsHtml += `<li>${student}</li>`;
     }
-    element.innerHTML += "</ol>"
+    element.innerHTML = `<ol>${studentsHtml}</ol>`
 }
 					</code></pre></p>
 				</section>
