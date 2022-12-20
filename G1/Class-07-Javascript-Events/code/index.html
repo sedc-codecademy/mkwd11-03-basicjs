@@ -84,6 +84,37 @@
       </p>
       <button id="details-btn" class="btn btn-primary">Read More</button>
     </article>
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" autocomplete="off" />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" autocomplete="off" />
+      </div>
+      <div class="form-group">
+        <label for="userEmail">Email</label>
+        <input
+          type="email"
+          id="userEmail"
+          name="userEmail"
+          autocomplete="off"
+        />
+      </div>
+      <div class="form-group">
+        <label for="userPassword">Password</label>
+        <input
+          type="password"
+          id="userPassword"
+          name="userPassword"
+          autocomplete="off"
+        />
+      </div>
+      <button id="submitBtn" class="btn btn-accent">Submit</button>
+    </form>
+    <p id="param-container" style="font-size: 2rem;"></p>
     <script src="app.js"></script>
+    <script src="exercise.js"></script>
   </body>
 </html>

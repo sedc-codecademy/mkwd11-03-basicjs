@@ -114,6 +114,7 @@ form {
 }
 
 .comment-box {
+  font-size: 1.8rem;
   padding: 1rem;
   background-color: var(--color-primary);
   border-radius: var(--main-border-radius);
