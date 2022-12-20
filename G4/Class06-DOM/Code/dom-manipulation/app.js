@@ -78,3 +78,23 @@ mainDivEl.innerHTML += `<p>This is added from javascript</p>
 const mainListEl = document.querySelector(".main-list");
 
 console.log(mainListEl);
+
+// Exercise 2
+
+const titleEl = document.querySelector(".title");
+const resultEl = document.querySelector(".result");
+
+console.log(titleEl, resultEl);
+
+resultEl.style.backgroundColor = "lightblue";
+titleEl.style.color = "rgb(10,200,30)";
+
+function chickenWeightCalculator(weight, element) {
+  const chickenWeight = weight / 0.5;
+
+  element.textContent = `Your weight of ${weight} in chicken weight is ${chickenWeight}`;
+}
+
+const weight = Number(prompt("Tell me your weight"));
+
+chickenWeightCalculator(weight, resultEl);
