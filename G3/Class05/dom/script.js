@@ -71,3 +71,10 @@ h1Element.innerText = "We changed the text of this element";
 let mainDiv = document.getElementById("main");
 
 mainDiv.innerHTML = "<h2>Yeee we added a new element</h2>";
+
+
+
+let elementParagraph = document.querySelector('.second');
+elementParagraph.style.color = 'yellow';
+// elementParagraph.style.display = 'none';
+elementParagraph.style.backgroundColor = 'blue';
