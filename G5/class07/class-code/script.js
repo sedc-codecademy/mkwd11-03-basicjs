@@ -119,3 +119,15 @@ regBtn.addEventListener('click', function() {
     showUser.innerText = userInfo;
 })
 
+// Exercise 2
+
+let paragraphsToChange = document.getElementById('changeStyle');
+let changeBtn = document.getElementById('changeTextBtn');
+
+changeBtn.addEventListener('click', function() {
+    paragraphsToChange.style.fontSize = '35px';
+    paragraphsToChange.style.color = 'red';
+    paragraphsToChange.style.backgroundColor = 'green';
+});
+
+
