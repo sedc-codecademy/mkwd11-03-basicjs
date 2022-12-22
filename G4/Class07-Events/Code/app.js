@@ -18,7 +18,7 @@ function printWin() {
 
 // Passing a function reference as the value (function definition not result from calling it)
 clickMeBtn.onclick = sayHello;
-// First function will not be executed like this
+// First function will not be executed like this because we replace the value for onclick on our btn
 clickMeBtn.onclick = printWin;
 
 // Event listener example
@@ -67,4 +67,49 @@ usernameInput.addEventListener("blur", function () {
   // We can write whatever we need here
   console.log("i am printed from an anonymous function");
   validateUsernameLength(6);
+});
+
+// Exercise 2 Solution
+
+const styleParagraphEl = document.querySelector(".style-paragraph");
+const changeBtn = document.querySelector(".change-btn");
+
+// always check selectors with console.log
+console.log(styleParagraphEl, changeBtn);
+
+changeBtn.addEventListener("click", function () {
+  // always check eventListeners with console log
+  console.log("clicked");
+  styleParagraphEl.style.color = "red";
+  styleParagraphEl.style.backgroundColor = "lightblue";
+  styleParagraphEl.style.fontSize = "40px";
+});
+
+// Exercise 3 solution
+
+const firstNameInput = document.getElementById("firstName");
+const lastNameInput = document.getElementById("lastName");
+const ageInput = document.getElementById("age");
+const emailInput = document.getElementById("email");
+const userBtn = document.getElementById("userBtn");
+const userDetailsEl = document.querySelector(".user-details");
+
+function generateUserDetails(
+  firstNameValue,
+  lastNameValue,
+  ageValue,
+  emailValue
+) {
+  return `User: ${firstNameValue} ${lastNameValue}, Age: ${ageValue}, Email: ${emailValue}`;
+}
+
+userBtn.addEventListener("click", function () {
+  console.log("user btn clicked");
+
+  userDetailsEl.textContent = generateUserDetails(
+    firstNameInput.value,
+    lastNameInput.value,
+    ageInput.value,
+    emailInput.value
+  );
 });
