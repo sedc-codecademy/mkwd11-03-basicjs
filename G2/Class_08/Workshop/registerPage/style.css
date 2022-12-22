@@ -1,0 +1,15 @@
+#registerUserContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.registerUserContainer__inputBlock{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}

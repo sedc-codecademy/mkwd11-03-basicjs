@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#tableDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+#usersTable{
+    width: 100%;
+    text-align: center;
+}
+
+#productsTable{
+    width: 300px;
+    text-align: center;
+}

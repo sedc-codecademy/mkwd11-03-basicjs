@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#companyHeadlineBlock{
+    display: flex;
+    width: 50%;
+}
+
+#loginBlock {
+    display: flex;
+    width: 50%;
+    height: 100px;
+    justify-content: flex-end;
+
+}
+
+.loginBlock__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+
+#registerInput{
+    font-size: 10px;
+}
+
+#loginButton{
+    width: 130px;
+}

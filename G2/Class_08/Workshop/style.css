@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainImage{
+    width: 100%;
+}
