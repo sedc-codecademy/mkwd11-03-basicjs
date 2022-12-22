@@ -1,0 +1,11 @@
+{
+    "model": "Astra",
+    "brand": "Opel",
+    "year": 2013,
+    "hasSunRoof": false,
+    "drivers": [
+        "Jana", 
+        "Ana", 
+        "Pero"
+    ]
+}
