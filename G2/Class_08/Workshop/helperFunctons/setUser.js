@@ -4,9 +4,9 @@
  * @date 22.12.2022
  */
 
-import User from "../user";
-import getUsers from "./getUsers";
-import setUsers from "./setUsers";
+import User from "../user.js";
+import getUsers from "./getUsers.js";
+import setUsers from "./setUsers.js";
 
 /**
  * @param {User} user user to save to server 
