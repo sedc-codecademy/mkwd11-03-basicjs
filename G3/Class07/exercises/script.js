@@ -2,6 +2,7 @@ function sayHello() {
     console.log("Say Hello");
 }
 
+
 // sayHello();
 
 function greet(message, name) {
