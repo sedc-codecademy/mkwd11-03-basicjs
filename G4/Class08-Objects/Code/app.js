@@ -76,7 +76,7 @@ function Person(name, yearOfBirth, job) {
   this.calculateAge = function () {
     const currentYear = new Date().getFullYear();
 
-    console.log(`${this.name} is ${currentYear - yearOfBirth} years old`);
+    console.log(`${this.name} is ${currentYear - this.yearOfBirth} years old`);
   };
 }
 
@@ -117,3 +117,67 @@ windowSize();
 // Called as method of an object
 console.log("Calling as object method");
 square.windowSize();
+
+// Exercise 4 solution
+const car = {
+  model: "Lada Kalina",
+  color: "Red",
+  year: 2013,
+  fuel: 50,
+  fuelConsumption: 6.6,
+  calculateFuelForDistance: function (distance) {
+    return distance * (this.fuelConsumption / 100);
+  },
+};
+
+// Exercise 5 solution
+
+//  Selecting elements
+const firstNameInput = document.querySelector("#firstName");
+const lastNameInput = document.querySelector("#lastName");
+const ageInput = document.querySelector("#age");
+const saveBtn = document.querySelector("#saveBtn");
+// Bonus element selection
+const studentListEl = document.querySelector(".student-list");
+
+// Adding variables
+const students = [];
+
+// Function to reset values
+function resetInputs() {
+  firstNameInput.value = "";
+  lastNameInput.value = "";
+  age.value = "";
+}
+
+function addStudentToArray(firstName, lastName, age) {
+  const student = {
+    firstName: firstName,
+    lastName: lastName,
+    age: age,
+  };
+  students.push(student);
+}
+
+function renderStudents() {
+  let studentsHtml = "";
+
+  for (let student of students) {
+    console.log(student);
+
+    studentsHtml += `<li>Name: ${student.firstName} ${student.lastName}, Age: ${student.age}</li>`;
+  }
+
+  studentListEl.innerHTML = studentsHtml;
+}
+
+// Adding listener to button and reading inputs value
+saveBtn.addEventListener("click", function () {
+  // Adding student object in array
+  addStudentToArray(firstNameInput.value, lastNameInput.value, age.value);
+
+  console.log("The students are", students);
+
+  renderStudents();
+  resetInputs();
+});
