@@ -50,7 +50,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
     // this will always be executed after the "after fetch" console.log
     console.log("in the success for todo");
 
-    // renderAllTodos(todos, todosContainerEl);
+    renderAllTodos(todos, todosContainerEl);
   })
   .catch(function (error) {
     console.log(error);
