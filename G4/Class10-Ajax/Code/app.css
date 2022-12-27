@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+.todo {
+  background-color: lightblue;
+  padding: 15px;
+  margin: 3px;
+}
+
+.todo strong {
+  color: navy;
+}
+
+.todos-container {
+  border: 2px solid navy;
+  padding: 20px;
+}
