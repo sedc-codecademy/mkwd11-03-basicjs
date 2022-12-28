@@ -1,0 +1,42 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#cardsContainer {
+    display: flex;
+    width: 80%;
+    height: 300px;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+.cardsContainer__card {
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.cardsContainer__card__left {
+    display: flex;
+    width: 50%;
+    padding: 30px;
+    border-radius: 0px 30px 30px 0px;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+.cardsContainer__card__right {
+    display: flex;
+    width: 50%;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Todo App</title>
+</head>
+<body>
+
+  <main>
+    <h2>Todo application</h2>
+    <hr />
+
+    <section id="formContainer">
+      <form>
+        <input type="text" placeholder="Enter todo name" />
+
+        <label for="not-done">Not done</label>
+        <input type="radio" id="not-done" name="todoStatus" value="not-done"/>
+
+        <label for="done">Done</label>
+        <input type="radio" id="done" name="todoStatus" value="done" />
+
+        <button id="addTodoBtn">Add TODO</button>
+      </form>
+
+      <span id="errMsg" class="errorColor">Form is invalid, please fill all fields!</span>
+    </section>
+
+    <section id="printTodosContainer"></section>
+  </main>
+  
+
+  <script
+   src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

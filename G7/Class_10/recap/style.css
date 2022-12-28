@@ -1,0 +1,22 @@
+.todoContainer {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-top: 10px;
+  justify-content: space-around;
+  box-shadow: 0 4px 2px grey;
+}
+
+.done {
+  color: green
+}
+
+.notDone {
+  color: orange;
+}
+
+
+.errorColor {
+  color: red;
+  display: none
+}

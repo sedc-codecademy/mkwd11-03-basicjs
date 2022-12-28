@@ -1,0 +1,13 @@
+.card {
+  border: 1px solid #1e1e1e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+    margin: 10px 0;
+}
