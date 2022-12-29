@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inconsolata", sans-serif;
+}
+
+h1 {
+  padding: 10px;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+.app-container {
+  display: flex;
+}
+
+.app-container section {
+  width: 50%;
+}
+
+li {
+  padding: 5px 0;
+}
+
+section {
+  border: 2px solid black;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 5px 5px 0px;
+  /* border-radius: 4px; */
+  padding: 10px;
+  margin: 15px;
+}
+
+button {
+  background-color: lightgreen;
+  box-shadow: 3px 3px 0px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: rgb(81, 232, 81);
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  /* margin: 5px; */
+  margin: 5px 0;
+}
+
+button {
+  width: 50%;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.grocery-list-container {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.total-list {
+  font-size: 25px;
+  font-weight: 500;
+  justify-self: flex-end;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.error-msg {
+  color: rgb(162, 31, 31);
+  font-weight: 600;
+}
+/* 
+.checkout-container {
+  max-width: 50%;
+} */
+
+.checkout-container .checkout-display {
+  border: 2px solid darkgray;
+  background-color: white;
+  display: flex;
+  margin: 5px;
+  border-radius: 4px;
+  justify-content: space-between;
+  /* width: 30%; */
+  padding: 5px;
+}
+
+.checkout-controls {
+  display: flex;
+}
+
+.checkout-controls button {
+  margin: 10px 20px;
+}

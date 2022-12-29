@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Grocery App</h1>
+    </header>
+    <main>
+      <div class="app-container">
+        <section class="grocery-form-container">
+          <h2>Add an item</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Enter Grocery Name</label>
+              <input type="text" id="name" placeholder="min 2 chars" />
+            </div>
+            <div class="form-group">
+              <label for="quantity">Enter Grocery Quantity</label>
+              <input
+                type="number"
+                id="quantity"
+                placeholder="Quantity can't be less than 0"
+              />
+            </div>
+            <div class="form-group">
+              <label for="price">Enter Grocery Price</label>
+              <input
+                type="number"
+                id="price"
+                placeholder="Price can't be less than 0"
+              />
+            </div>
+            <p id="formErrorMsg" class="error-msg"></p>
+            <button type="button" id="addBtn">Add</button>
+          </form>
+        </section>
+        <section class="grocery-list-container">
+          <h2>List of groceries</h2>
+          <ol class="grocery-list"></ol>
+          <div class="total-list">Total: 0$</div>
+        </section>
+      </div>
+      <section class="checkout-container">
+        <h2>Checkout</h2>
+        <div class="checkout-display">
+          Available Cash: <strong class="available-cash">3000$</strong>
+        </div>
+        <div class="checkout-display">
+          Total Order Cost: <strong class="total-checkout">3000$</strong>
+        </div>
+        <div class="checkout-display">
+          Cash After Purchase: <strong class="leftover-cash">3000$</strong>
+        </div>
+        <p class="error-msg" id="checkoutErrorMsg"></p>
+        <div class="checkout-controls">
+          <button id="payBtn">Pay Order</button>
+          <button id="resetBtn">Reset Order</button>
+        </div>
+      </section>
+      <section>
+        <h2>Requriements</h2>
+        <ol>
+          <li>
+            Recreate the above application using everything you have learned so
+            far in basic javascript
+          </li>
+          <li>
+            Go one feature at a time so the order would be this:
+            <ol>
+              <li><strong>Grocery Form</strong></li>
+              <li><strong>Grocery List</strong></li>
+              <li><strong>Grocery Checkout</strong></li>
+            </ol>
+          </li>
+          <li>
+            The user needs to be able to create a grocery that will be an object
+            added in an array
+          </li>
+          <li>
+            After the user adds the grocery the html updates with the newly
+            added item
+          </li>
+          <li>
+            Create a total field at the bottom that will show the total cost of
+            all the items added in the list
+          </li>
+          <li>
+            Validate the input so that the user can't add ingredient names less
+            than 2 characters or price/quantity below 0
+          </li>
+          <li>
+            Show an error message in the HTML to the user if he has invalid
+            input
+          </li>
+          <li>
+            BONUS: Create the checkout element above only after you have
+            finished the form and the list
+          </li>
+          <li>
+            The user needs to have total cash and then when he clicks on the pay
+            order button the total from the list is removed from the cash and
+            the order is reset
+          </li>
+          <li>
+            If the user makes an order that goes above his available cash then
+            show him an error in the html telling him he has insufficent funds
+          </li>
+          <li>
+            With this the user is going to be able to make multiple orders until
+            he runs out of money
+          </li>
+          <li>
+            <strong>TIPS</strong> Always move one small step at a time,
+            console.log() everything and only move on the next problem until you
+            have tested the previous one and you are sure it is working
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

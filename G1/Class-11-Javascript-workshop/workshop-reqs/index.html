@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <ol>
+        <li>
+          <p>Create a function that makes an HTTP request to the Fake Store API.</p>
+          <a href="https://fakestoreapi.com/products/">https://fakestoreapi.com/products/</a>
+          <ul>
+            <li>Bonus: Make the function use async/await, and return the result.</li>
+            <li>(REMEMBER: An async function always returns the result wrapped in a promise!)</li>
+            <li>(REMEMBER 2: Await can ONLY be used within an async function!)</li>
+            <li>With this, you can store the result in a global variable.</li>
+          </ul>
+        </li>
+        <li>
+            <p>Create a function that renders the results returned by the HTTP request function.</p>
+            <ul>
+                <li>It needs to render a UL with an LI for each product that holds the title.</li>
+            </ul>
+        </li>
+        <li>
+            <p>Create a function that calculates the sum of all products and renders it on the screen.</p>
+        </li>
+        <li>
+            <p>Create a function that finds the highest rated product.</p>
+        </li>
+        <li class="bonus-box">
+            <p>Bonus</p>
+            <ul>
+                <li>
+                    <p>Add a click event listener to each LI. When that LI is clicked, it should make a call for a single product
+                        using its ID and render the title, price, description and image of the product.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Add a button that cleans up the DOM and re-renders the list of products
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Add a search functionality. It should take the ID of a product from the input and use the functions from requirement #5 to render a single product.
+                    </p>
+                </li>
+            </ul>
+        </li>
+      </ol>
+    </div>
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
